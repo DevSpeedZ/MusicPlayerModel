@@ -6,6 +6,7 @@ public class Mp3 {
     private int anoLancamento;
     private float totalAvaliacao;
     private int numAvaliacoes;
+    private int duracao;
 
     //setters
     public void setTitulo(String titulo) {
@@ -18,6 +19,10 @@ public class Mp3 {
 
     public void setAnoLancamento(int anoLancamento) {
         this.anoLancamento = anoLancamento;
+    }
+
+    public void setDuracao(int duracao) {
+        this.duracao = duracao;
     }
 
     //getters
@@ -35,6 +40,10 @@ public class Mp3 {
 
     public int getNumAvaliacoes() {
         return numAvaliacoes;
+    }
+
+    public int getDuracao() {
+        return duracao;
     }
 
     public float getMediaAvaliacao(){

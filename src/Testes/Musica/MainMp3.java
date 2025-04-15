@@ -3,7 +3,7 @@ package Testes.Musica;
 import Testes.Musica.Fila.Fila;
 import Testes.Musica.models.Music;
 
-public class MainMusica {
+public class MainMp3 {
     public static void main(String[] args) {
 
         Music musica1 = new Music();

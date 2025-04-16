@@ -1,5 +1,5 @@
-package Testes.Musica.Algoritmos;
-import Testes.Musica.models.Mp3;
+package MusicPlayer.Algoritmos;
+import MusicPlayer.models.Mp3;
 
 public class Fila {
     private int tempoTotal;

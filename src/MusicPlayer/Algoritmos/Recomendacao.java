@@ -1,4 +1,4 @@
-package Testes.Musica.Algoritmos;
+package MusicPlayer.Algoritmos;
 
 public class Recomendacao {
 

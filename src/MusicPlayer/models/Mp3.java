@@ -1,6 +1,6 @@
-package Testes.Musica.models;
+package MusicPlayer.models;
 
-import Testes.Musica.Algoritmos.Classificavel;
+import MusicPlayer.Algoritmos.Classificavel;
 
 public class Mp3 implements Classificavel {
     private String titulo;

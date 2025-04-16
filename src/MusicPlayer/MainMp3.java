@@ -1,9 +1,8 @@
-package Testes.Musica;
+package MusicPlayer;
 
-import Testes.Musica.Algoritmos.Fila;
-import Testes.Musica.Algoritmos.Recomendacao;
-import Testes.Musica.models.Music;
-import Testes.Musica.models.User;
+import MusicPlayer.Algoritmos.Recomendacao;
+import MusicPlayer.models.Music;
+import MusicPlayer.models.User;
 
 public class MainMp3 {
     public static void main(String[] args) {

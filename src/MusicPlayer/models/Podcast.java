@@ -1,4 +1,4 @@
-package Testes.Musica.models;
+package MusicPlayer.models;
 
 public class Podcast extends Mp3{
     private String oradores;

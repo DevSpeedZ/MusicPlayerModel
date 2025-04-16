@@ -5,7 +5,7 @@ import Testes.Musica.Algoritmos.Recomendacao;
 import Testes.Musica.models.Music;
 import Testes.Musica.models.User;
 
-public class MainMusica {
+public class MainMp3 {
     public static void main(String[] args) {
 
         Recomendacao recomendacao = new Recomendacao();

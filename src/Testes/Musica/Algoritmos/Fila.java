@@ -1,4 +1,4 @@
-package Testes.Musica.Fila;
+package Testes.Musica.Algoritmos;
 import Testes.Musica.models.Mp3;
 
 public class Fila {

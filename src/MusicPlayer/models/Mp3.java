@@ -2,13 +2,20 @@ package MusicPlayer.models;
 
 import MusicPlayer.Algoritmos.Classificavel;
 
-public class Mp3 implements Classificavel {
+public class Mp3 implements Classificavel, Comparable<Mp3>{
     private String titulo;
     private String artista;
     private int anoLancamento;
     private float totalAvaliacao;
     private int numAvaliacoes;
     private int duracao;
+
+    //metodo construtor
+    public Mp3(String titulo, String artista, int anoLancamento){
+        this.titulo = titulo;
+        this.artista = artista;
+        this.anoLancamento = anoLancamento;
+    }
 
     //setters
     public void setTitulo(String titulo) {
@@ -93,4 +100,13 @@ public class Mp3 implements Classificavel {
         System.out.println("--------------------------");
     }
 
+    @Override
+    public String toString() {
+        return "%s (%s)".formatted(this.titulo,this.artista);
+    }
+
+    @Override
+    public int compareTo(Mp3 o) {
+        return this.getTitulo().compareTo(o.getTitulo());
+    }
 }

@@ -1,41 +1,46 @@
-package MusicPlayer;
+package MusicPlayer.Mains;
 
 import MusicPlayer.Algoritmos.Recomendacao;
+import MusicPlayer.models.Mp3;
 import MusicPlayer.models.Music;
 import MusicPlayer.models.User;
+
+import java.util.ArrayList;
 
 public class MainMp3 {
     public static void main(String[] args) {
 
         Recomendacao recomendacao = new Recomendacao();
 
-        Music musica1 = new Music();
-        musica1.setTitulo("Rap God");
-        musica1.setArtista("Eminem");
+        Music musica1 = new Music("Rap God","Eminem",2013);
         musica1.setEstilo("Rap");
-        musica1.setDuracao(610);
-        musica1.setAnoLancamento(2013);
+        musica1.setDuracao(403);
+        musica1.exibirFichaTecnica();
 
-        Music musica2 = new Music();
-        musica2.setTitulo("Mocking Bird");
-        musica2.setArtista("Eminem");
+        Music musica2 = new Music("Mocking Bird","Eminem",2004);
         musica2.setEstilo("Rap");
         musica2.setDuracao(268);
-        musica2.setAnoLancamento(2004);
 
-        User User1 = new User();
-        User1.setNome("Samuel Trovo Botelho");
-        User1.setIdade(18);
-        User1.setEmail("sambotelho07@gmail.com");
+        Music musica3 = new Music("Godzilla","Eminem",2020);
+        musica3.setEstilo("Rap");
+        musica3.setDuracao(267);
+
+
+
+        User User1 = new User("Samuel Trovo Botelho",18,"sambotelho07@gmail.com");
         User1.avaliar(5);
-        User1.avaliar(5);
-        User1.avaliar(5);
-        User1.avaliar(5);
-        User1.avaliar(1);
-        User1.avaliar(6);
+
         System.out.println(User1.getClassificacao());
         User1.mostrarEstrelas();
         recomendacao.eRecomendado(User1);
+
+        ArrayList<Mp3> listaDeMusicas = new ArrayList();
+        listaDeMusicas.add(musica1);
+        listaDeMusicas.add(musica2);
+        listaDeMusicas.add(musica3);
+        System.out.println("O tamanho da lista é de " + listaDeMusicas.size());
+        System.out.println("A primeira musica é " + listaDeMusicas.get(0).getTitulo());
+        System.out.println(listaDeMusicas);
 
         /*
         musica1.avaliar(9);
